@@ -1,6 +1,62 @@
+body {
+  background-color: #001c30;
+}
 h1 {
   text-align: center;
 }
+h2 {
+  margin: 0 0 5px;
+  font-size: 24px;
+}
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #84a7a1;
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #435b66;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 30px 0;
+}
+.city:last-child {
+  border: none;
+}
+
+.date,
+.time {
+  font-family: "Philosopher", sans-serif;
+}
+.date {
+  font-size: 18px;
+  opacity: 0.7;
+}
+.time {
+  font-size: 35px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 15px;
+  vertical-align: middle;
+  line-height: 36px;
+}
+
 footer {
   text-align: center;
+  font-size: 18px;
+  color: #f1c376;
 }
