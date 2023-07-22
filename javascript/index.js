@@ -21,6 +21,30 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let amsterdamElement = document.querySelector("#amsterdam");
+  if (seoulElement) {
+    let amsterdamDateElement = amsterdamElement.querySelector(".date");
+    let amsterdamTimeElement = amsterdamElement.querySelector(".time");
+    let amsterdamTime = moment().tz("Europe/Amsterdam");
+
+    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM Do YYYY");
+    amsterdamTimeElement.innerHTML = amsterdamTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  let guayaquilElement = document.querySelector("#guayaquil");
+  if (guayaquilElement) {
+    let guayaquilDateElement = guayaquilElement.querySelector(".date");
+    let guayaquilTimeElement = guayaquilElement.querySelector(".time");
+    let guayaquilTime = moment().tz("Europe/Amsterdam");
+
+    guayaquilDateElement.innerHTML = guayaquilTime.format("MMMM Do YYYY");
+    guayaquilTimeElement.innerHTML = guayaquilTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {

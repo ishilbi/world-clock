@@ -18,15 +18,19 @@ select {
   font-family: "Orbitron", sans-serif;
   font-size: 15px;
 }
+
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: #435b66;
   padding: 30px;
+  background: #435a66;
+  border-radius: 10px;
+
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   font-family: "Orbitron", sans-serif;
 }
+
 .city {
   display: flex;
   justify-content: space-between;
@@ -55,7 +59,11 @@ select {
   vertical-align: middle;
   line-height: 36px;
 }
-
+a {
+  text-decoration: none;
+  color: #f1c376;
+  font-weight: bold;
+}
 footer {
   text-align: center;
   font-size: 18px;
